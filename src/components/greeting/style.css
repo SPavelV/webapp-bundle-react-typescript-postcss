@@ -1,0 +1,29 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  & h1 {
+    font-size: 3rem;
+    color: gold;
+    margin: 0;
+  }
+}
+
+.reactLogo {
+  animation-name: rotation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
